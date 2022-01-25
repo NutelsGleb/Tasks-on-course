@@ -1,0 +1,92 @@
+ 4. Создать внешний репозиторий c названием  TXT.
+-заходим на GitHub.com и создаем через веб-интерфейс новый репозиторий
+
+
+ 5. Клонировать репозиторий TXT на локальный компьютер.
+-В веб интерфейе берем ссылку на созданный репозиторий.
+-В терменале вводим команду:
+	 git clone https://github.com/NutelsGleb/txt.git
+
+
+ 6. Внутри локального TXT создать файл “new.txt”.
+-Перехожу в папу локального репозитория:
+	cd TXT
+
+
+ 7. Добавить файл под гит.
+-Создаю файл:
+	cat > new.txt
+	name:Gleb
+	age:37
+
+
+ 8. Закоммитить файл.
+	git add new.txt
+	git commit -m "123"
+
+ 9. Отправить файл на внешний GitHub репозиторий.
+	git push
+
+ 10. Отредактировать содержание файла “new.txt” - написать информацию о себе 
+(ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате txt.
+	cat > new.txt
+	name:Gleb
+	age:37
+	animals:2
+	zp:2000
+
+
+
+ 11. Отправить изменения на внешний репозиторий.
+	git commit -am "123j"
+
+
+ 12. Создать файл preferences.txt
+	touch preferences.txt
+
+ 13. В файл preferences.txt добавить информацию о своих предпочтениях 
+(Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате txt.
+	vim preferences.txt
+	favorite_move:5element
+	favorite_series:love,death+robots
+	favorite_eat:pelmeni
+	favorite_season:winter
+	favorite_country:Germany
+ 
+
+ 14. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате txt
+	touch skills.txt
+	vim skills.txt
+
+	sql: true
+	bash: true
+	git: true
+	python: true
+	C++: false
+
+
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+	git add.
+	git commit -m "2files"
+	git push
+
+
+ 16. На веб интерфейсе создать файл bug_report.txt.
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 18. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате txt.
+В веб-интерфейсе ввожу:
+ID:3201
+Summery:Field 'Birthday' on registration form accept invalid data
+Severity:Major
+steps to reproduce: 
+			1) open site.com
+			2) click 'dont have accont?' button
+			3) enter current data
+Result:Data stay in field
+Expected Result:massege 'invalid value'
+
+
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 20. Синхронизировать внешний и локальный репозиторий txt
+	git fetch
+	git pull

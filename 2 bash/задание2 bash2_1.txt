@@ -1,0 +1,95 @@
+ 4. Создать внешний репозиторий c названием JSON.
+-заходим на GitHub.com и создаем через веб-интерфейс новый репозиторий
+
+
+ 5. Клонировать репозиторий JSON на локальный компьютер.
+-В веб интерфейе берем ссылку на созданный репозиторий.
+-В терменале вводим команду:
+	 git clone https://github.com/NutelsGleb/JSON.git
+
+
+ 6. Внутри локального JSON создать файл “new.json”.
+-Перехожу в папу локального репозитория:
+	cd json
+
+
+ 7. Добавить файл под гит.
+-Создаю файл:
+	cat > new.json
+	{"name":"Gleb",
+	 "age":"37"}
+
+
+ 8. Закоммитить файл.
+	git add new.json
+	git commit -m "123"
+
+ 9. Отправить файл на внешний GitHub репозиторий.
+	git push
+
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе 
+(ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+	cat > new.json
+
+	{"name":"Gleb",
+	 "age": 37,
+	 "animals": 2,
+	 "zp": 2000}
+
+
+
+ 11. Отправить изменения на внешний репозиторий.
+	git commit -am "123j"
+
+
+ 12. Создать файл preferences.json
+	touch preferences.json
+
+ 13. В файл preferences.json добавить информацию о своих предпочтениях 
+(Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+	vim preferences.json
+
+	{"favorite_move":"5element",
+	 "favorite_series": "love,death+robots",
+	 "favorite_eat": "pelmeni",
+	 "favorite_season":"winter",
+	 "favorite_country" : "Germany"}
+ 
+
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+	touch skills.json
+	vim skills.json
+
+	{"sql": true,
+	"bash": true,
+	"git": true,
+	"python": true,
+	"C++": false}
+
+
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+	git add.
+	git commit -m "2files"
+	git push
+
+
+ 16. На веб интерфейсе создать файл bug_report.json.
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+В веб-интерфейсе ввожу:
+
+	{"ID":3201,
+	"Summery":"Field 'Birthday' on registration form accept invalid data",
+	"Severity":"Major",
+	"steps to reproduce": {  "1": "open site.com",
+				"2": "click 'dont have accont?' button",
+				"3": "enter current data"
+				},
+	"Result":"Data stay in field",
+	"Expected Result":"massege 'invalid value'"
+	}
+
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+	git fetch
+	git pull

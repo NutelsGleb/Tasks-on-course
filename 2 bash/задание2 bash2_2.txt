@@ -1,0 +1,98 @@
+ 4. Создать внешний репозиторий c названием XML.
+-заходим на GitHub.com и создаем через веб-интерфейс новый репозиторий
+
+
+ 5. Клонировать репозиторий XML на локальный компьютер.
+-В веб интерфейе берем ссылку на созданный репозиторий.
+-В терменале вводим команду:
+	 git clone https://github.com/NutelsGleb/XML.git
+
+
+ 6. Внутри локального XML создать файл “new.xml”.
+-Перехожу в папу локального репозитория:
+	cd XML
+
+
+ 7. Добавить файл под гит.
+-Создаю файл:
+	cat > new.xml
+<body>	
+	<name>Gleb</name>
+	<age>37</age>
+</body>
+
+ 8. Закоммитить файл.
+	git add new.xml
+	git commit -m "123"
+
+ 9. Отправить файл на внешний GitHub репозиторий.
+	git push
+
+ 10. Отредактировать содержание файла “new.xml” - написать информацию о себе 
+(ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате xml.
+	cat > new.xml
+<body>	
+	<name>Gleb</name>
+	<age>37</age>
+	<animals>2</animals>
+	<zp>2000</zp>
+</body>
+
+
+ 11. Отправить изменения на внешний репозиторий.
+	git commit -am "123x"
+
+
+ 12. Создать файл preferences.xml
+	touch preferences.xml
+
+ 13. В файл preferences.xml добавить информацию о своих предпочтениях 
+(Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+	vim preferences.xml
+<body>	
+	<favorite_move>5element</favorite_move>
+	<favorite_series>love,death+robots</favorite_series>
+	<favorite_eat>pelmeni</favorite_eat>
+	<favorite_season>winter</favorite_season>
+	<favorite_country>Germany</favorite_country>
+</body>
+
+ 14. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+	touch skills.xml
+	vim skills.xml
+	
+<body>	
+	<sql>true</sql>
+	<bash>true</bash>
+	<git>true</git>
+	<python>true</python>
+	<C>false</C>
+</body>
+
+
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+	git add .
+	git commit -m "2files"
+	git push
+
+
+ 16. На веб интерфейсе создать файл bug_report.xml
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 18. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+В веб-интерфейсе ввожу:
+<body>	
+	<ID>3201</ID>
+	<Summery>Field 'Birthday' on registration form accept invalid data</Summery>
+	<Severity>Major</Severity>
+	<steps_to_reproduce><fr>open site.com</fr>
+			<se>click 'dont have accont?' button</se>
+			<th>enter current data</th>
+	</steps_to_reproduce>
+	<Result>Data stay in field</Result>
+	<Expected_Result>message 'invalid value'</Expected_Result>
+</body>
+
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+	git fetch
+	git pull
