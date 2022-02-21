@@ -1,3 +1,72 @@
+1) Посмотреть где я
+NGb@NGb--- MINGW64 /d/!!EXCHANGE2/QA/уроки/1
+$ pwd
+/d/!!EXCHANGE2/QA/уроки/1
+
+2) Создать папку
+NGb@NGb--- MINGW64 /d/!!EXCHANGE2/QA/уроки/1
+$ mkdir fldr_2
+
+3) Зайти в папку
+NGb@NGb--- MINGW64 /d/!!EXCHANGE2/QA/уроки/1
+$ cd fldr_2
+
+4) Создать 3 папки
+NGb@NGb--- MINGW64 /d/!!EXCHANGE2/QA/уроки/1/fldr_1
+$ mkdir 1 2 3
+
+5) Зайти в любоую папку
+NGb@NGb--- MINGW64 /d/!!EXCHANGE2/QA/уроки/1/fldr_1
+$  cd 1
+
+6) Создать 5 файлов (3 txt, 2 json)
+NGb@NGb--- MINGW64 /d/!!EXCHANGE2/QA/уроки/1/fldr_1/1
+$ touch one.txt two.txt tree.txt one.json two.json
+
+7) Создать 3 папки
+NGb@NGb--- MINGW64 /d/!!EXCHANGE2/QA/уроки/1/fldr_1/1
+$ mkdir f1 f2 f3
+
+8. Вывести список содержимого папки
+NGb@NGb--- MINGW64 /d/!!EXCHANGE2/QA/уроки/1/fldr_1/1
+$ ls -la
+total 4
+drwxr-xr-x 1 NGb 197121 0 Feb 21 01:54 ./
+drwxr-xr-x 1 NGb 197121 0 Feb 21 01:52 ../
+drwxr-xr-x 1 NGb 197121 0 Feb 21 01:54 f1/
+drwxr-xr-x 1 NGb 197121 0 Feb 21 01:54 f2/
+drwxr-xr-x 1 NGb 197121 0 Feb 21 01:54 f3/
+-rw-r--r-- 1 NGb 197121 0 Feb 21 01:53 one.json
+-rw-r--r-- 1 NGb 197121 0 Feb 21 01:53 one.txt
+-rw-r--r-- 1 NGb 197121 0 Feb 21 01:53 tree.txt
+-rw-r--r-- 1 NGb 197121 0 Feb 21 01:53 two.json
+-rw-r--r-- 1 NGb 197121 0 Feb 21 01:53 two.txt
+
+9) + Открыть любой txt файл
+NGb@NGb--- MINGW64 /d/!!EXCHANGE2/QA/уроки/1/fldr_1/1
+$ vim one.txt
+
+10) + написать туда что-нибудь, любой текст.
+нажимаю клавишу[i] и пишу текст
+this is first text from ternimal editor
+
+11) + сохранить и выйти.
+нажимаю клавишу[esc] и команду выхода
+:wq
+
+12) Выйти из папки на уровень выше
+NGb@NGb--- MINGW64 /d/!!EXCHANGE2/QA/уроки/1/fldr_1/1
+$ cd ..
+
+13) переместить любые 2 файла, которые вы создали, в любую другую папку.
+NGb@NGb--- MINGW64 /d/!!EXCHANGE2/QA/уроки/1/fldr_1
+$ mv ./1/one.json ./2/
+NGb@NGb--- MINGW64 /d/!!EXCHANGE2/QA/уроки/1/fldr_1
+$ mv ./1/two.json ./2/
+
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку.
+NGb@NGb--- MINGW64 /d/!!EXCHANGE2/QA/уроки/1/fldr_1
+$ cp ./2/*.* ./3/
 
 15) Найти файл по имени
 
@@ -125,6 +194,7 @@ Content-Type: text/html; charset=utf-8
 Content-Length: 290
 Server: Werkzeug/2.0.1 Python/3.8.10
 Date: Tue, 04 Jan 2022 23:56:41 GMT
+
 
 
 2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
