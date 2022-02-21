@@ -27,13 +27,9 @@ $ touch one.txt two.txt tree.txt one.json two.json
 NGb@NGb--- MINGW64 /d/!!EXCHANGE2/QA/—É—Ä–æ–∫–∏/1/fldr_1/1
 $ mkdir f1 f2 f3
 
-<<<<<<< HEAD
-8) ¬˚‚ÂÒÚË ÒÔËÒÓÍ ÒÓ‰ÂÊËÏÓ„Ó Ô‡ÔÍË
-NGb@NGb--- MINGW64 /d/!!EXCHANGE2/QA/ÛÓÍË/1/fldr_1/1
-=======
+
 8) –í—ã–≤–µ—Å—Ç–∏ —Å–ø–∏—Å–æ–∫ —Å–æ–¥–µ—Ä–∂–∏–º–æ–≥–æ –ø–∞–ø–∫–∏
 NGb@NGb--- MINGW64 /d/!!EXCHANGE2/QA/—É—Ä–æ–∫–∏/1/fldr_1/1
->>>>>>> c26d36927cfc8405dfe6477311168316478e795f
 $ ls -la
 total 4
 drwxr-xr-x 1 NGb 197121 0 Feb 21 01:54 ./
@@ -73,41 +69,22 @@ $ mv ./1/two.json ./2/
 NGb@NGb--- MINGW64 /d/!!EXCHANGE2/QA/—É—Ä–æ–∫–∏/1/fldr_1
 $ cp ./2/*.* ./3/
 
-<<<<<<< HEAD
-15) Õ‡ÈÚË Ù‡ÈÎ ÔÓ ËÏÂÌË
-NGb@NGb--- MINGW64 /d/!!EXCHANGE2/QA/ÛÓÍË/1
-=======
 15) –ù–∞–π—Ç–∏ —Ñ–∞–π–ª –ø–æ –∏–º–µ–Ω–∏
 NGb@NGb--- MINGW64 /d/!!EXCHANGE2/QA/—É—Ä–æ–∫–∏/1
->>>>>>> c26d36927cfc8405dfe6477311168316478e795f
 $ find -iname "*.json"
 ./fldr_1/2/first1.json
 ./fldr_1/2/second2.json
 ./fldr_1/3/first.json
 ./fldr_1/3/second.json
 
-NGb@NGb--- MINGW64 /d/!!EXCHANGE2/QA/—É—Ä–æ–∫–∏/1
-$ find ./fldr_1/2 -iname "*.json"
-./fldr_1/2/first1.json
-./fldr_1/2/second2.json
 
-
-<<<<<<< HEAD
-16) ÔÓÒÏÓÚÂÚ¸ ÒÓ‰ÂÊËÏÓÂ ‚ Â‡Î¸ÌÓÏ ‚ÂÏÂÌË (ÍÓÏ‡Ì‰‡ grep) ËÁÛ˜ËÚÂ Í‡Í ÓÌ‡ ‡·ÓÚ‡ÂÚ.
-NGb@NGb--- MINGW64 /d/!!EXCHANGE2/QA/ÛÓÍË/1
-=======
 16) –ø—Ä–æ—Å–º–æ—Ç—Ä–µ—Ç—å —Å–æ–¥–µ—Ä–∂–∏–º–æ–µ –≤ —Ä–µ–∞–ª—å–Ω–æ–º –≤—Ä–µ–º–µ–Ω–∏ (–∫–æ–º–∞–Ω–¥–∞ grep) –∏–∑—É—á–∏—Ç–µ –∫–∞–∫ –æ–Ω–∞ —Ä–∞–±–æ—Ç–∞–µ—Ç.
 NGb@NGb--- MINGW64 /d/!!EXCHANGE2/QA/—É—Ä–æ–∫–∏/1
->>>>>>> c26d36927cfc8405dfe6477311168316478e795f
 $ grep -r -i "hello World" ..
 ../1/fldr_1/1/one.txt:hello world
 
 
-<<<<<<< HEAD
-NGb@NGb--- MINGW64 /d/!!EXCHANGE2/QA/ÛÓÍË/1
-=======
 NGb@NGb--- MINGW64 /d/!!EXCHANGE2/QA/—É—Ä–æ–∫–∏/1
->>>>>>> c26d36927cfc8405dfe6477311168316478e795f
 $ grep -r -i -B2 "hello World" ..
 ../1/fldr_1/1/one.txt-this is first text from bush command line
 ../1/fldr_1/1/one.txt:hello world
@@ -135,84 +112,52 @@ $ grep -h -r -i -c "hello World" ..
 0
 
 
-
-<<<<<<< HEAD
-17) ‚˚‚ÂÒÚË ÌÂÒÍÓÎ¸ÍÓ ÔÂ‚˚ı ÒÚÓÍ ËÁ ÚÂÍÒÚÓ‚Ó„Ó Ù‡ÈÎ‡
-NGb@NGb--- MINGW64 /d/!!EXCHANGE2/QA/ÛÓÍË/1
-=======
 17) –≤—ã–≤–µ—Å—Ç–∏ –Ω–µ—Å–∫–æ–ª—å–∫–æ –ø–µ—Ä–≤—ã—Ö —Å—Ç—Ä–æ–∫ –∏–∑ —Ç–µ–∫—Å—Ç–æ–≤–æ–≥–æ —Ñ–∞–π–ª–∞
 NGb@NGb--- MINGW64 /d/!!EXCHANGE2/QA/—É—Ä–æ–∫–∏/1
->>>>>>> c26d36927cfc8405dfe6477311168316478e795f
 $ head ./fldr_1/1/one.txt
 this is first text from bush command line
 hello world
 
-<<<<<<< HEAD
-18) ‚˚‚ÂÒÚË ÌÂÒÍÓÎ¸ÍÓ ÔÓÒÎÂ‰ÌËı ÒÚÓÍ ËÁ ÚÂÍÒÚÓ‚Ó„Ó Ù‡ÈÎ‡
-NGb@NGb--- MINGW64 /d/!!EXCHANGE2/QA/ÛÓÍË/1
-=======
+
 18) –≤—ã–≤–µ—Å—Ç–∏ –Ω–µ—Å–∫–æ–ª—å–∫–æ –ø–æ—Å–ª–µ–¥–Ω–∏—Ö —Å—Ç—Ä–æ–∫ –∏–∑ —Ç–µ–∫—Å—Ç–æ–≤–æ–≥–æ —Ñ–∞–π–ª–∞
 NGb@NGb--- MINGW64 /d/!!EXCHANGE2/QA/—É—Ä–æ–∫–∏/1
->>>>>>> c26d36927cfc8405dfe6477311168316478e795f
 $ tail ./fldr_1/1/one.txt
 this is first text from bush command line
 hello world
 
-<<<<<<< HEAD
-19) ÔÓÒÏÓÚÂÚ¸ ÒÓ‰ÂÊËÏÓÂ ‰ÎËÌÌÓ„Ó Ù‡ÈÎ‡ (ÍÓÏ‡Ì‰‡ less) ËÁÛ˜ËÚÂ Í‡Í ÓÌ‡ ‡·ÓÚ‡ÂÚ.
-NGb@NGb--- MINGW64 /d/!!EXCHANGE2/QA/ÛÓÍË/1
-=======
+
 19) –ø—Ä–æ—Å–º–æ—Ç—Ä–µ—Ç—å —Å–æ–¥–µ—Ä–∂–∏–º–æ–µ –¥–ª–∏–Ω–Ω–æ–≥–æ —Ñ–∞–π–ª–∞ (–∫–æ–º–∞–Ω–¥–∞ less) –∏–∑—É—á–∏—Ç–µ –∫–∞–∫ –æ–Ω–∞ —Ä–∞–±–æ—Ç–∞–µ—Ç.
 NGb@NGb--- MINGW64 /d/!!EXCHANGE2/QA/—É—Ä–æ–∫–∏/1
->>>>>>> c26d36927cfc8405dfe6477311168316478e795f
 $ less -n ./fldr_1/1/one.txt
 
 NGb@NGb--- MINGW64 /d/!!EXCHANGE2/QA/—É—Ä–æ–∫–∏/1
 $ less ./fldr_1/1/one.txt
 
-<<<<<<< HEAD
-20) ‚˚‚ÂÒÚË ‰‡ÚÛ Ë ‚ÂÏˇ
-NGb@NGb--- MINGW64 /d/!!EXCHANGE2/QA/ÛÓÍË/1
-=======
+
 20) –≤—ã–≤–µ—Å—Ç–∏ –¥–∞—Ç—É –∏ –≤—Ä–µ–º—è
 NGb@NGb--- MINGW64 /d/!!EXCHANGE2/QA/—É—Ä–æ–∫–∏/1
->>>>>>> c26d36927cfc8405dfe6477311168316478e795f
 $ date
 Wed Jan  5 01:01:31     2022
 
 ================================
-<<<<<<< HEAD
-«‡‰‡ÌËÂ *
-1) ŒÚÔ‡‚ËÚ¸ http Á‡ÔÓÒ Ì‡ ÒÂ‚Â.
-http://162.55.220.72:5005/terminal-hw-request
 
-NGb@NGb--- MINGW64 /d/!!EXCHANGE2/QA/ÛÓÍË/1
-=======
 –ó–∞–¥–∞–Ω–∏–µ *
 1) –û—Ç–ø—Ä–∞–≤–∏—Ç—å http –∑–∞–ø—Ä–æ—Å –Ω–∞ —Å–µ—Ä–≤–µ—Ä.
 http://162.55.220.72:5005/terminal-hw-request
 
 NGb@NGb--- MINGW64 /d/!!EXCHANGE2/QA/—É—Ä–æ–∫–∏/1
->>>>>>> c26d36927cfc8405dfe6477311168316478e795f
 $ curl http://162.55.220.72:5005/terminal-hw-request
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-100   237  100   237    0     0   2673      0 --:--:-- --:--:-- --:--:--  2724{"Intro":"Hello!! This is your the first response from server","Tasks":{"Task_1":"Send the next URL in terminal: http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)","result":["Your_String","Your_number"]}}
-<<<<<<< HEAD
-
-=======
->>>>>>> c26d36927cfc8405dfe6477311168316478e795f
+100   237  100   237    0     0   2673      0 --:--:-- --:--:-- --:--:--  2724
+{"Intro":"Hello!! This is your the first response from server","Tasks":{"Task_1":"Send the next URL in terminal:
+ http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)","result":["Your_String","Your_number"]}}
 
 
 
-
-<<<<<<< HEAD
-ÚÂÍÒÚ ÒÍËÔÚ‡:
-=======
 2) –ù–∞–ø–∏—Å–∞—Ç—å —Å–∫—Ä–∏–ø—Ç –∫–æ—Ç–æ—Ä—ã–π –≤—ã–ø–æ–ª–Ω–∏—Ç –∞–≤—Ç–æ–º–∞—Ç–∏—á–µ—Å–∫–∏ –ø—É–Ω–∫—Ç—ã 3, 4, 5, 6, 7, 8, 13
 
 —Ç–µ–∫—Å—Ç —Å–∫—Ä–∏–ø—Ç–∞:
->>>>>>> c26d36927cfc8405dfe6477311168316478e795f
 
 #!/bin/bash
 cd ../4
@@ -224,11 +169,7 @@ ls -la
 mv s4.json s5.json ../homefldr2/
 
 
-<<<<<<< HEAD
-ÂÁÛÎ¸Ú‡Ú ‚˚ÔÓÎÌÂÌËˇ:
-=======
 —Ä–µ–∑—É–ª—å—Ç–∞—Ç –≤—ã–ø–æ–ª–Ω–µ–Ω–∏—è:
->>>>>>> c26d36927cfc8405dfe6477311168316478e795f
 
 NGb@NGb--- MINGW64 /d/!!EXCHANGE2/QA/—É—Ä–æ–∫–∏/1/fldr_1/1
 $ ./bashscript
